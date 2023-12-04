@@ -54,9 +54,37 @@ php artisan serve --port=8080
 http://127.0.0.1:8080/
 ```
 
+# after First
+```bash
+
+# Startup Docker
+docker-compose up -d
+# Enter app Container result->[root@????:/workspace#] 
+docker-compose exec app bash
+# Execute　vite
+npm run dev
+
+# Open new terminal,then Enter app container
+docker-compose exec app bash
+# Open Server  --port is Option
+php artisan serve --port=8080
+
+# Open Under Address
+http://127.0.0.1:8080/
+```
+# Result 
+
+http://127.0.0.1:8080/
+
+![Alt text](image.png)
+
+
+
 # Refference
 
 ## Readbule アセットの構築
 
 https://readouble.com/laravel/9.x/ja/vite.html
+
+https://cyublog.com/articles/php-ja/jp-docker-laravel9-vite/
 
